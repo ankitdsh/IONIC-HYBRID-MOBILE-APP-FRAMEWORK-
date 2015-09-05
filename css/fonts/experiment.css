@@ -1,0 +1,168 @@
+/*------------------------------------------------------------------------ANIMATION--------------------------------------------------------------*/
+/*
+  We're using CSS transitions for when
+  the enter and move events are triggered
+  for the element that has the .repeated-item
+  class
+*/
+
+.repeated-item.ng-enter, .repeated-item.ng-move {
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+    opacity: 0;
+}
+/*
+ The ng-enter-active and ng-move-active
+ are where the transition destination properties
+ are set so that the animation knows what to
+ animate.
+*/
+
+.repeated-item.ng-enter.ng-enter-active, .repeated-item.ng-move.ng-move-active {
+    opacity: 1;
+}
+/*
+  We're using CSS keyframe animations for when
+  the leave event is triggered for the element
+  that has the .repeated-item class
+*/
+
+.repeated-item.ng-leave {
+    -webkit-animation: 0.5s my_animation;
+    -moz-animation: 0.5s my_animation;
+    -o-animation: 0.5s my_animation;
+    animation: 0.5s my_animation;
+}
+@keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/*
+  Unfortunately each browser vendor requires
+  its own definition of keyframe animation code...
+*/
+
+@-webkit-keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-moz-keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@-o-keyframes my_animation {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/*------------------------------------------------------------------------END--------------------------------------------------------------*/
+/*-----------------------------------------------Responsive Columns for Ionic---------------------------------------------------------------------*/
+/** For the task list header columns and tasks **/
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.wrap {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@media (max-width: 320px) {
+    .flex-container.wrap > div {
+        width: 50%;
+        max-width: 50%;
+        text-overflow: '';
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media (min-width: 321px) {
+    .flex-container.wrap > div {
+        width: 33%;
+        max-width: 33%;
+        text-overflow: '';
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media (min-width: 480px) {
+    .flex-container.wrap > div {
+        width: 25%;
+        max-width: 25%;
+        text-overflow: '';
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media (min-width: 640px) {
+    .flex-container.wrap > div {
+        width: 20%;
+        max-width: 20%;
+        text-overflow: '';
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+@media (min-width: 960px) {
+    .flex-container.wrap > div {
+        width: 15%;
+        max-width: 15%;
+        text-overflow: '';
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+.low-pad-item {
+    padding: 0;
+    margin: 0;
+}
+.col-header {
+    font-weight: bold;
+}
+.column {
+    text-overflow: '';
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 87%;
+    float: left;
+    padding: 2px 5px;
+}
+.col-header > .column {
+    padding: 5px 5px;
+}
+.underlined {
+    text-decoration: underline;
+}
+.column-sort {
+    min-width: 13%;
+    float: right;
+    text-align: right;
+    padding-right: 2px;
+}
+/*-----------------------------------------------END---------------------------------------------------------------------*/

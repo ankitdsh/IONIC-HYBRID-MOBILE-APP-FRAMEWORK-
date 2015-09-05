@@ -1,0 +1,106 @@
+  <div class="card-x-container">
+        <div class="card-x">
+        <div class="front-x">hello</div>
+        <div class="back-x">back</div>
+        </div>
+        </div>
+<!-- <div>
+<div class="row-x">    
+    <div class="col-x col-x12"></div>    
+</div>
+        
+<div class="row-x">    
+    <div class="col-x col-x11"></div>
+    <div class="col-x col-x1"></div>
+</div>
+
+<div class="row-x">    
+    <div class="col-x col-x10"></div>
+    <div class="col-x col-x2"></div>
+</div>
+
+<div class="row-x">    
+    <div class="col-x col-x9"></div>
+    <div class="col-x col-x3"></div>
+</div>
+
+<div class="row-x">    
+    <div class="col-x col-x8"></div>
+    <div class="col-x col-x4"></div>
+</div>
+
+<div class="card-x">
+<div class="row-x">    
+    <div class="col-x col-x7"></div>
+    <div class="col-x col-x5"></div>
+</div>
+</div>
+
+<div class="row-x">    
+    <div class="col-x col-x6"></div>
+    <div class="col-x col-x6"></div>  
+    </div>
+
+<div class="row-x">    
+    <div class="col-x col-x4"></div>
+    <div class="col-x col-x4"></div>
+    <div class="col-x col-x4"></div>
+    </div>
+
+<div class="row-x">    
+    <div class="col-x col-x3"></div>
+    <div class="col-x col-x3"></div>
+    <div class="col-x col-x3"></div>
+    <div class="col-x col-x3"></div>
+    </div>
+
+
+<div class="row-x">    
+    <div class="col-x col-x2"></div>
+    <div class="col-x col-x2"></div>
+    <div class="col-x col-x2"></div>
+    <div class="col-x col-x2"></div>
+    <div class="col-x col-x2"></div>
+    <div class="col-x col-x2"></div>
+</div>
+
+<div class="row-x">    
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+    <div class="col-x col-x1"></div>
+</div>
+</div> -->
+
+
+
+        <div class="card-x">
+<div class="row-x">    
+    <div class="col-x col-x7"></div>
+    <div class="col-x col-x5"></div>
+</div>
+</div>
+
+
+
+<!-- Respnsive JumboTron in Ionic -->
+<!-- <div class="row responsive-sm-xxx ">
+  <div class="col fs22">.col fs22 </div>
+  <div class="col">.col=below only if less than 360</div>  
+</div>
+<div class="row responsive-sm-xx">
+  <div class="col">.col </div>
+  <div class="col">.col=below only if less than 420</div>  
+</div>
+<div class="row responsive-sm-x">
+  <div class="col">.col </div>
+  <div class="col">.col=below only if less than 520</div>  
+</div> -->

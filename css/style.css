@@ -1,0 +1,452 @@
+/*body {
+  cursor: url('/img/nsdl/finger.png'), auto;
+}*/
+/*Steps for Mobile Device
+Reduces extra whitespace/padding across the site. Small screens means space is at a premium!
+Removes :hover states. They'll never been seen on touch devices.
+Adjusts the layout to be single column. 
+Removes the box-shadow around the site's main container div. Large box shadows reduce page performance.
+Used CSS flex box model box-ordinal-group to change the ordering of each section on the homepage.
+CSS flexbox FTW!
+Removes opacity changes. Changing alpha values is a performance hit on mobile.*/
+
+@font-face {
+    font-family: 'NSDLFont';
+    src: url('fonts/univers-45-light-1361510630.ttf') format('truetype')
+}
+body {
+    font-family: 'NSDLFont', sans-serif;
+}
+/*----------------------------------------------------------------NSDL-COLORS--------------------------------------------------------------------*/
+
+.hide-x {
+    display: none;
+}
+.show-x {
+    display: block;
+}
+.marketContent-dark {
+    background: #0f0f0f;
+    color: #aaa;
+}
+.marketContent-light {
+    background-color: #fff;
+    color: #444;
+}
+/*All Global Styles*/
+
+.greenBG {
+    background-color: #139e15;
+}
+.redBG {
+    background-color: #e60b0b;
+}
+.homeBar {
+    background-color: #8f2321;
+}
+.navBarColor {
+    background-color: #4a1515;
+}
+.blackCard {
+    background-color: #0f0f0f;
+}
+.homeCardHeader {} .equityHomeCard {
+    background-color: #fcbe2b;
+}
+.mfHomeCard {
+    background-color: #12c782;
+}
+.bondsHomeCard {
+    background-color: #075da3;
+}
+/*----------------------------------------------------------------NSDL-COLORS-END----------------------------------------------------------------*/
+
+.noPadding {
+    padding: 0px !important;
+}
+.noMargin {
+    margin: 0px !important;
+}
+.wrapText {
+    white-space: normal !important;
+}
+a {
+    text-decoration: none;
+}
+.fs22 {
+    font-size: 22px
+}
+/*All Slide Menu/Navigation Bar Styles*/
+
+.bar.bar-nsdl {
+    border-color: #4a1515;
+    background-color: #4a1515;
+    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    color: #fff;
+}
+/*ALL GLOBAL CARDS STYLES*/
+
+.centeredNPadding {
+    width: 90%;
+    margin: 0px auto;
+}
+/*All Homepage Styles*/
+
+.homeCard {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    /* font-weight: bold;
+  padding: 10px;*/
+}
+/*---------------------------------------My Custom 12 Colu
+mn Grid---------------------------------------------*/
+
+.card-flat {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px 0px 10px 0px;
+}
+.card-x {
+    width: 100%;
+    /*box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.5)!important;*/
+    
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8)!important;
+    overflow: hidden;
+    margin: 0px 0px 10px 0px;
+    border-radius: 2px;
+}
+.row-x {
+    padding: 0px;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+}
+.card-x-text {
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.card-x-header {
+    line-height: 40px;
+    font-size: 22px;
+}
+.card-x-amount {
+    line-height: 35px;
+    font-size: 24px;
+}
+.card-x-mid {
+    line-height: 20px;
+    font-size: 16px;
+}
+.card-x-small {
+    line-height: 35px;
+    font-size: 16px;
+}
+.fs-x-white {
+    color: #fff;
+}
+.fs-x-black {
+    color: #333;
+}
+.fs-x-light {
+    color: #333;
+}
+.fs-x-light-inverse {
+    color: #fff;
+}
+.fs-x-dark {
+    color: #ffffff;
+}
+.fs-x-dark-inverse {
+    color: #333;
+}
+.fs-x-grey {
+    color: #999;
+}
+.fs-x-greyer {
+    color: #666;
+}
+.fs-x-green {
+    color: #15ab17;
+}
+.fs-x-red {
+    color: #db0202;
+}
+.fs-x-big {
+    font-size: 26px;
+}
+.fs-x-mid {
+    font-size: 24px;
+}
+.fs-x-small {
+    font-size: 14px;
+}
+.fs-x-small-x {
+    font-size: 10px;
+}
+.fs-x-26 {
+    font-size: 26px;
+}
+.fs-x-24 {
+    font-size: 24px;
+}
+.fs-x-20 {
+    font-size: 20px;
+}
+.fs-x-18 {
+    font-size: 18px;
+}
+.fs-x-16 {
+    font-size: 16px;
+}
+.fs-x-14 {
+    font-size: 14px;
+}
+.fs-x-12 {
+    font-size: 12px;
+}
+.fs-x-10 {
+    font-size: 10px;
+}
+.bold-x {
+    font-weight: bold;
+}
+.lh-x-40 {
+    line-height: 40px;
+}
+.lh-x-35 {
+    line-height: 35px;
+}
+.lh-x-30 {
+    line-height: 30px;
+}
+.lh-x-25 {
+    line-height: 25px;
+}
+.lh-x-20 {
+    line-height: 20px;
+}
+.lh-x-15 {
+    line-height: 15px;
+}
+.lh-x-10 {
+    line-height: 10px;
+}
+.lh-x-5 {
+    line-height: 5px;
+}
+.subHeader {
+    font-size: 22px;
+    margin: 15px 0px 15px 0px;
+}
+.col-x {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    height: 100%;
+}
+.tableH-x {
+    font-size: 18px;
+    background-color: #262626;
+    color: #999999;
+    text-align: left;
+    /*width: 100%*/
+}
+.tableH-x:first-child {
+    text-align: left;
+}
+.tableH-x-1 {
+    font-size: 16px;
+    background-color: #595959;
+    color: #cccccc;
+    text-align: left;
+}
+.w-x-33 {
+    width: 33%;
+    display: inline-block;
+}
+/*.col-x:first-child{  margin-left: 0px;}*/
+/*.col-x:last-child{  margin-right: 0px;}*/
+
+.fl-x {
+    float: left;
+}
+.fr-x {
+    float: right;
+}
+.pushRight {
+    text-align: right;
+}
+.stayRight {
+    text-align: right;
+}
+.col-x.col-x1 {
+    width: 8.33%;
+}
+.col-x.col-x2 {
+    width: 16.66%;
+}
+.col-x.col-x3 {
+    width: 25%;
+}
+.col-x.col-x4 {
+    width: 33.33%;
+}
+.col-x.col-x5 {
+    width: 41.66%;
+}
+.col-x.col-x6 {
+    width: 50%;
+}
+.col-x.col-x7 {
+    width: 58.33%;
+}
+.col-x.col-x8 {
+    width: 66.66%;
+}
+.col-x.col-x9 {
+    width: 75%;
+}
+.col-x.col-x10 {
+    width: 83.33%;
+}
+.col-x.col-x11 {
+    width: 91.66%;
+}
+.col-x.col-x12 {
+    width: 100%;
+}
+/*@media(max-width: 420px) and (min-width: 320px) {
+    .col-x {
+        max-width: 100%;
+        width: 100% !important;
+        margin: 0px;
+    }
+    .fl-x {
+        float: right;
+    }
+    .fr-x {
+        float: left;
+    }
+    .pushRight {
+        text-align: left;
+    }
+}*/
+
+@media(max-width: 420px) and (min-width: 360px) {
+    /* .col-x {
+     max-width: 100%;
+     width: 100% !important;
+     margin: 0px;
+ }
+ .fl-x {
+     float: right;
+ }
+ .fr-x {
+     float: left;
+ }
+ .pushRight {
+     text-align: left;
+ }
+*/
+    /*NEW ADDITION*/
+    
+    .fs-x-14 {
+        font-size: 10px;
+    }
+    .fs-x-16 {
+        font-size: 12px;
+    }
+    .fs-x-18 {
+        font-size: 16px;
+    }
+    .fs-x-26 {
+        font-size: 22px;
+    }
+    .fs-x-24 {
+        font-size: 20px;
+    }
+    .card-x-header {
+        line-height: 40px;
+        font-size: 20px;
+    }
+    .card-x-amount {
+        line-height: 35px;
+        font-size: 20px;
+    }
+    .card-x-small {
+        line-height: 35px;
+        font-size: 14px;
+    }
+    .card-x-mid {
+        line-height: 20px;
+        font-size: 14px;
+    }
+    .fs-x-mid {
+        font-size: 20px;
+    }
+    .tableH-x-1 {
+        font-size: 12px;
+        background-color: #595959;
+        color: #cccccc;
+        text-align: left;
+    }
+    .tableH-x {
+        font-size: 14px;
+        background-color: #262626;
+        color: #999999;
+        text-align: left;
+        /* width: 100%; */
+    }
+}
+@media(max-width: 359px) {
+    .col-x {
+        max-width: 100%;
+        width: 100% !important;
+        margin: 0px;
+    }
+    .fl-x {
+        float: right;
+    }
+    .fr-x {
+        float: left;
+    }
+    .pushRight {
+        text-align: left;
+    }
+}
+/*---------------------------------------My Custom 12 Column Grid---------------------------------------------*/
+/*All overwriten/extended ionic.css styles*/
+
+@media (max-width: 360px) {
+    .responsive-sm-xx {
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .responsive-sm-xx .col, .responsive-sm-xx .col-10, .responsive-sm-xx .col-20, .responsive-sm-xx .col-25, .responsive-sm-xx .col-33, .responsive-sm-xx .col-34, .responsive-sm-xx .col-50, .responsive-sm-xx .col-66, .responsive-sm-xx .col-67, .responsive-sm-xx .col-75, .responsive-sm-xx .col-80, .responsive-sm-xx .col-90 {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin-bottom: 0px;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .pushRight {
+        direction: ltr;
+    }
+    .fs22 {
+        font-size: 12px
+    }
+}

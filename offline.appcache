@@ -1,0 +1,19 @@
+CACHE MANIFEST
+      
+# This is a comment
+
+CACHE:
+#css/style.css
+#css/style.css
+#/css/style.css
+/js/app.js
+#/js/controllers.js
+#js/app.png
+
+#http://example.com/css/styles.css
+
+FALLBACK:
+#/ /offline.html
+
+NETWORK:
+*

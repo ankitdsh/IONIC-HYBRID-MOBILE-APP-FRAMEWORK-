@@ -1,0 +1,33 @@
+<div>
+    <div data-ng-transclude></div>
+
+    <div class="card">
+        <div class="item item-text-wrap noPadding">
+            <div class="row noPadding">
+                <div class="col col-67 equityHomeCard">
+                    <div class="row">
+                        <div class="homeCard homeCardHeader">{{item.name.toUpperCase()}}</div>
+                    </div>
+                    <div class="row">
+                        <div class="homeCard">{{item.change}}</div>
+                    </div>
+                </div>
+
+                <div class="col {{item.cardClass}}">
+                    <div class="row">
+                        <div class="homeCard homeCardHeader item-note" align="right">
+                            {{item.value}}
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <img width="50" height="50" class="logo" ng-src="item.arrowUrl">
+                        <div class="col homeCard" data-ng-bind-html="item.changeValue">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

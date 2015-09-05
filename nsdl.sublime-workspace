@@ -1,0 +1,772 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"ng-s",
+				"ng-src	AngularJS"
+			],
+			[
+				"sty",
+				"ng-style	AngularJS"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"ng-re",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ng-r",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"equi",
+				"equitiesList"
+			],
+			[
+				"equ",
+				"equitySummary"
+			],
+			[
+				"set",
+				"setEquitySummary"
+			],
+			[
+				"ng",
+				"ng-class	AngularJS"
+			],
+			[
+				"bor",
+				"border-color"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"ng-mo",
+				"ng-model	AngularJS"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"href",
+				"ng-href	AngularJS"
+			],
+			[
+				"ng-h",
+				"ng-href	AngularJS"
+			],
+			[
+				"ng-c",
+				"ng-class	AngularJS"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"ng-bin",
+				"ng-bind-html	AngularJS"
+			],
+			[
+				"slide",
+				"slideMenuLists"
+			],
+			[
+				"get",
+				"getSlideMenuLists"
+			],
+			[
+				"sl",
+				"slideMenuLists"
+			],
+			[
+				"ngc",
+				"ng-click	AngularJS"
+			],
+			[
+				"f",
+				"factory	AngularJS"
+			],
+			[
+				"$s",
+				"$stateProvider"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"ws",
+				"white-space"
+			],
+			[
+				"lin",
+				"lineType"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"re",
+				"reset"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1351,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/app.js",
+			"settings":
+			{
+				"buffer_size": 1780,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 6591,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 10825,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n\n<head>\n\n    <title>Advanced Chart</title>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"inc/widget.css\">\n\n    <style type=\"text/css\">\n    #container1 {\n        min-height: 515px;\n        width: 955px;\n        padding: 40px 50px 0px 20px;\n        display: none;\n    }\n    #container2 {\n        min-height: 320px;\n        width: 520px;\n        margin: 20px 20px 0px 20px;\n    }\n    #container3 {\n        min-height: 320px;\n        width: 520px;\n        margin: 20px 20px 0px 20px;\n    }\n    #currencyContainer {\n        min-height: 270px;\n        width: 520px;\n        margin: 20px 20px 0px 20px;\n    }\n    #metalContainer {\n        min-height: 270px;\n        width: 520px;\n        margin: 20px 20px 0px 20px;\n    }\n    #indexMovementContainer {\n        min-height: 300px;\n        width: 600px;\n        margin: 20px 20px 0px 20px;\n    }\n    </style>\n</head>\n\n<body>\n    <div>\n        <span style=\"padding: 20px 0px 0px 280px;\">Select Company:<select id=\"drpBaseCompany\" onchange=\"drawBaseCompany();\">\n            <option value=\"28074\">Bajaj Auto Ltd</option>\n            <option value=\"51\">Bajaj Electricals Ltd</option>\n            <option value=\"12019\">Coal India Ltd</option>\n            <option value=\"114\">Cipla Ltd</option>\n            <option value=\"6890\">DLF Ltd</option>\n            <option value=\"231\">GlaxoSmithkline Healthcare Ltd</option>\n            <option value=\"5656\">HCL Technologies Ltd</option>\n            <option value=\"4987\">HDFC Bank Ltd</option>\n            <option value=\"237\">Hero MotoCorp Ltd</option>\n            <option value=\"255\">Hindustan Unilever Ltd</option>\n            <option value=\"5418\">ICICI Bank Ltd</option>\n            <option value=\"2806\">Infosys Ltd</option>\n            <option value=\"348\">Larsen & Toubro Ltd</option>\n            <option value=\"469\">Ranbaxy Laboratories Ltd</option>\n            <option value=\"476\">Reliance Industries Ltd</option>\n            <option value=\"2295\" selected=\"selected\">Tata Communications Ltd</option>\n            <option value=\"5400\">Tata Consultancy Services Ltd</option>\n            <option value=\"560\">Tata Motors Ltd</option>\n            <option value=\"566\">Tata Steel Ltd</option>\n            <option value=\"17215\">Tech Mahindra Ltd</option>\n            <option value=\"614\">Wipro Ltd</option>\n        </select>\n        </span>\n\n        <span style=\"padding: 20px 0px 0px 40px;\">Compare with:<select id=\"drpCompareCompany\">\n            <option value=\"-1\" selected=\"selected\">add a Company</option>\n            <option value=\"28074\" >Bajaj Auto Ltd</option>\n            <option value=\"51\">Bajaj Electricals Ltd</option>\n            <option value=\"12019\">Coal India Ltd</option>\n            <option value=\"114\">Cipla Ltd</option>\n            <option value=\"6890\">DLF Ltd</option>\n            <option value=\"231\">GlaxoSmithkline Healthcare Ltd</option>\n            <option value=\"5656\">HCL Technologies Ltd</option>\n            <option value=\"4987\">HDFC Bank Ltd</option>\n            <option value=\"237\">Hero MotoCorp Ltd</option>\n            <option value=\"255\">Hindustan Unilever Ltd</option>\n            <option value=\"5418\">ICICI Bank Ltd</option>\n            <option value=\"2806\">Infosys Ltd</option>\n            <option value=\"348\">Larsen & Toubro Ltd</option>\n            <option value=\"469\">Ranbaxy Laboratories Ltd</option>\n            <option value=\"476\">Reliance Industries Ltd</option>\n            <option value=\"2295\">Tata Communications Ltd</option>\n            <option value=\"5400\">Tata Consultancy Services Ltd</option>\n            <option value=\"560\">Tata Motors Ltd</option>\n            <option value=\"566\">Tata Steel Ltd</option>\n            <option value=\"17215\">Tech Mahindra Ltd</option>\n            <option value=\"614\">Wipro Ltd</option>\n        </select>\n            <input id=\"btnAddCompare\" type=\"button\" value=\"ADD\" onclick=\"addCompany();\" />\n        </span>\n    </div>\n    <div id=\"container1\"></div>\n    INDEX MULTIPLE\n    <div id=\"container2\"></div>\n    INDEX SINGLE\n    <div id=\"container3\"></div>\n    CURRENCY GRAPH\n    <div id=\"currencyContainer\"></div>\n    METAL GRAPH\n    <div id=\"metalContainer\"></div>\n    INDEX MOVEMENT GRAPH\n    <div id=\"indexMovementContainer\"></div>\n\n\n\n\n\n</body>\n<script language=\"javascript\" type=\"text/javascript\" src=\"js/charting/anandRathiCharts.js\"></script>\n<script language=\"javascript\" type=\"text/javascript\" src=\"js/charting/anandRathiCharts.js\"></script>\n<script src=\"js/charting/libs/graphing/.js\"></script>\n\n</html>\n",
+			"file": "/C/wamp/www/anandRathi/www/index.html",
+			"file_size": 5537,
+			"file_write_time": 130681028259583785,
+			"settings":
+			{
+				"buffer_size": 4576,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/modals/device.html",
+			"settings":
+			{
+				"buffer_size": 605,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/ankit/ionic/NSDL/www/templates/equityDetail.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/bondsDetails.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/mutualfundsDetails.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modal.html",
+		"/C/Users/ankit/ionic/NSDL/www/js/controllers.js",
+		"/C/Users/ankit/ionic/NSDL/www/templates/equityList.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/home.html",
+		"/C/Users/ankit/ionic/NSDL/www/css/style.css",
+		"/C/wamp/www/chartwtIntra/data/intra2/5418_NSE.csv",
+		"/C/Users/ankit/ionic/NSDL/www/js/services.js",
+		"/C/wamp/www/small/www/js/charting/anandRathiCharts.js",
+		"/C/wamp/www/chartwtIntra/data/hist/114_BSE.csv",
+		"/C/Users/ankit/ionic/NSDL/plugins/org.apache.cordova.device/www/device.js",
+		"/C/Users/ankit/ionic/ionic demos/ionic-weather-master/platforms/android/platform_www/cordova.js",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/locate-us.html",
+		"/C/Users/ankit/ionic/codepen demos/responsiveColumn/www/index.html",
+		"/C/Users/ankit/ionic/codepen demos/responsiveColumn/www/css/style.css",
+		"/C/Users/ankit/ionic/NSDL/www/templates/temp-extra",
+		"/C/Users/ankit/ionic/codepen demos/responsiveColumn/www/js/index.js",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/device.html",
+		"/C/Users/ankit/ionic/NSDL/plugins/android.json",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/ankit/ionic/NSDL/www/js/app.js",
+		"/C/Users/ankit/ionic/NSDL/www/js/directives.js",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/HTMLBeautify/HTMLBeautify.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/Javascript Beautify/JavascriptBeautify.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/AngularJS/AngularJS-sublime-package.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/User/JavascriptBeautify.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/log-out.html",
+		"/C/Users/ankit/ionic/NSDL/www/lib/ionic/scss/_grid.scss",
+		"/C/Users/ankit/ionic/NSDL/www/lib/ionic/scss/_toggle.scss",
+		"/C/Users/ankit/ionic/NSDL/www/nsdl.sublime-project",
+		"/C/Users/ankit/ionic/NSDL/www/index.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/about-us.html",
+		"/C/Users/ankit/ionic/NSDL/www/lib/ionic/js/ionic.js",
+		"/C/Users/ankit/ionic/NSDL/www/lib/ionic/css/ionic.css",
+		"/C/Users/ankit/ionic/NSDL/config.xml",
+		"/C/Users/ankit/ionic/NSDL/www/lib/google/maps.api.js",
+		"/C/Users/ankit/ionic/NSDL/www/templates/equityDetails.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/theme.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/settings.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/profile.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/slide.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/directives/homeAssetCard.html",
+		"/C/Users/ankit/ionic/NSDL/www/templates/modals/contact-us.html",
+		"/C/Users/ankit/ionic/NSDL/platforms/android/res/xml/config.xml",
+		"/C/Users/ankit/ionic/ionic demos/ionic-weather-master/www/config.xml",
+		"/C/Users/ankit/ionic/ionic demos/ionic-ion-swipe-cards-master/example/package.json",
+		"/C/Users/ankit/ionic/ionic demos/ionic-ion-swipe-cards-master/example/ionic.project",
+		"/C/Users/ankit/ionic/ionic demos/ionic-ion-swipe-cards-master/example/gulpfile.js",
+		"/C/Users/ankit/ionic/ionic demos/ionic-ion-swipe-cards-master/example/scss/ionic.app.scss",
+		"/C/Users/ankit/ionic/ionic demos/ionic-weather-master/README.md",
+		"/C/Users/ankit/ionic/ionic demos/ionic-ion-swipe-cards-master/example/bower.json",
+		"/C/Users/ankit/ionic/ionic demos/ionic-weather-master/ionic.project",
+		"/C/Users/ankit/ionic/NSDL/www/lib/jquery/jquery.2.1.3.min.js",
+		"/C/Users/ankit/ionic/ankitz/nsdlapp1/www/js/controllers.js",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/slide.html",
+		"/C/Users/ankit/ionic/sideMenu/www/js/directives.js",
+		"/C/Users/ankit/ionic/sideMenu/www/js/app.js",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/directives/homeAssetCard.html",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/profile.html",
+		"/C/Users/ankit/ionic/sideMenu/www/js/services.js",
+		"/C/Users/ankit/ionic/sideMenu/www/js/controllers.js",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/home.html",
+		"/C/Users/ankit/ionic/sideMenu/www/index.html",
+		"/C/Users/ankit/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/ankit/ionic/sideMenu/www/css/style.css",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/slide-menu.html",
+		"/C/Users/ankit/ionic/ionic-weather-master/www/index.html",
+		"/C/Users/ankit/ionic/sideMenu/www/lib/ionic/css/ionic.css",
+		"/C/Users/ankit/ionic/sideMenu/www/lib/ionic/js/ionic.bundle.js",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/homeAssetCard.html",
+		"/C/Users/ankit/ionic/sideMenu/www/lib/ionic/js/angular/angular-resource.min.js",
+		"/C/Users/ankit/ionic/sideMenu/www/lib/ionic/scss/_reset.scss",
+		"/C/Users/ankit/ionic/sideMenu/www/templates/event-menu.html",
+		"/C/Users/ankit/ionic/sideMenu/www/js/index.js",
+		"/C/Users/ankit/ionic/myProject/www/index.html",
+		"/C/Users/ankit/ionic/side menu/www/css/ionic.css",
+		"/C/Users/ankit/ionic/side menu/www/js/ionic.bundle.js",
+		"/C/Users/ankit/ionic/side menu/index.html",
+		"/C/Program Files/Android/Android Studio/bin/studio64.exe",
+		"/C/wamp/www/chartwtIntra/js/charting/config/config.js",
+		"/C/wamp/www/chartwtIntra/js/charting/views/view_stockWidget.js",
+		"/C/Users/ankit/Downloads/model_series.js",
+		"/C/Users/ankit/AppData/Roaming/npm/node_modules/ionic/lib/ionic.js",
+		"/C/Users/ankit/AppData/Roaming/npm/node_modules/cordova/cordova.js",
+		"/C/wamp/www/chartwtIntra/js/charting/main.js",
+		"/C/Users/ankit/Downloads/formulae.js",
+		"/E/my downloads/GAMES/game/Tomb.Raider-SKIDROW/skidrow.nfo",
+		"/C/wamp/www/chartwtIntra/js/charting/ankitz.js",
+		"/C/wamp/www/chartwtIntra/js/charting/models/model_series.js",
+		"/C/wamp/www/chartwtIntra/index.html",
+		"/C/wamp/www/chartwtIntra/js/charting/views/view_chart.js",
+		"/C/wamp/www/chartwtIntra/inc/widget.css",
+		"/C/wamp/www/chartwtIntra/js/charting/extend.js",
+		"/C/Users/ankit/AppData/Roaming/npm/node_modules/phonegap/package.json",
+		"/C/Users/ankit/AppData/Roaming/npm/node_modules/phonegap/COPYRIGHT",
+		"/C/Users/ankit/AppData/Roaming/npm/bower",
+		"/C/Users/ankit/AppData/Roaming/npm/phonegap.cmd",
+		"/C/Users/ankit/AppData/Roaming/npm/phonegap"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"home.html",
+			"equitylist.html",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fs-x-small",
+			"link",
+			"visited",
+			"setEquitiesList",
+			"first",
+			"Chart",
+			"highStockConfig",
+			"equity",
+			"List",
+			">\n",
+			"arrowUrl",
+			"prevAsOnText",
+			"contentClass",
+			"col-x",
+			"toggleLeft",
+			"contentClass",
+			"themeChange",
+			"init",
+			"ion-view",
+			"ion-pane",
+			"<ion-pane>",
+			"$",
+			"sample-show-hide",
+			"ng-enter",
+			"view-animate",
+			"reveal",
+			"reveal-animation",
+			"revealAnimation",
+			"slide-animation",
+			"SlideMenuCtrl",
+			"slide-in",
+			"slide-in-",
+			"slide",
+			"animate",
+			"ng-animate",
+			"ng-an",
+			".right",
+			"right",
+			"theme",
+			"bar-dark",
+			"assertive",
+			"asser",
+			"item-text",
+			"right",
+			"\"right\"",
+			"right",
+			"item-right",
+			"item-ri",
+			"equityHomeCard",
+			"menu-toggle",
+			"android-settings",
+			"ion-chatbubble-working",
+			"menu-animated",
+			"box",
+			"menu-content",
+			"275px",
+			"				if(Object.keys(firstValue).length < 4)\n",
+			"redraw:",
+			"check",
+			"exchange:",
+			"change_l",
+			"change_chartType",
+			"toggle_lineType",
+			"toggle_ch",
+			"change_lineType",
+			"isLineTypeDisabledIntraWeek",
+			"change_lineType",
+			"change_chartType:",
+			"line",
+			"isOverlaysIntraWeekEnabled",
+			"reset()",
+			"reset",
+			"reset:",
+			"chart not loaded",
+			"chart ",
+			"pickProperties"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"fs-x-14",
+			"equities",
+			"col-x col-x",
+			">"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1351,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1210,
+								1210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1780,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/controllers.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6591,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1253,
+								1253
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7764,
+								7764
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4717.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/wamp/www/anandRathi/www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4576,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4552,
+								4552
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/modals/device.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 605,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								268,
+								268
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 100.0
+	},
+	"project": "nsdl.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"hom",
+				"templates\\home.html"
+			],
+			[
+				"loc",
+				"templates\\modals\\locate-us.html"
+			],
+			[
+				"modal/ab",
+				"templates\\modals\\about-us.html"
+			],
+			[
+				"app",
+				"js\\app.js"
+			],
+			[
+				"con",
+				"js\\controllers.js"
+			],
+			[
+				"contro",
+				"js\\controllers.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 408.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 168.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

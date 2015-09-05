@@ -1,0 +1,94 @@
+<ion-view view-title="Advance Charts">
+    <ion-content ng-class="'marketContent-'+theme" has-bouncing="false">
+
+        <!-- Equity Banner -->
+        <!--   <div class="card-x noMargin" ng-class="equitySummary.cardClass">
+            <div class="row-x">
+                <div class="col-x col-x6  ">
+                    <div class="fs-x-mid fs-x-white">
+                        {{equitySummary.name}}
+                    </div>
+                    <div class="fs-x-small lh-x-15 fs-x-white"> {{equitySummary.isin}}
+                    </div>
+                    <div class="fs-x-big lh-x-40  fs-x-white">
+                        {{equitySummary.amount}}
+                    </div>
+
+                    <div class="fs-x-12 fs-x-black bold-x lh-x-15">
+                        STATEMENT OF HOLDING
+                        <br> AS ON {{equitySummary.date}} | {{equitySummary.time}}
+                    </div>
+                </div>
+
+                <div class="col-x col-x6">
+                    <div class="fr-x ">
+                        <div class="fs-x-small lh-x-40 fs-x-white pushRight">CHANGE&nbsp;&nbsp;</div>
+                        <div>
+                            <div class="fl-x" style="padding: 0px 10px 0px 10px;">
+                                <img width="50" height="50" class="logo" ng-src="{{equitySummary.arrowUrl}}" />
+                            </div>
+                            <div class="fs-x-mid  lh-x-25 fs-x-white fr-x pushRight">
+                                {{equitySummary.changeValue}}
+                                <br>({{equitySummary.changePercent}}%)&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- Stock HighChart -->
+        <div class="padding">
+            <div style="position: relative; z-index: 1;">
+                <button class="button button-small button-positive" style="position: absolute; right: 10px;" ng-click="showConfirm()">
+                    Formulas
+                </button>
+            </div>
+            <div>
+                <highchart id="advanceChart" config="ADVANCE_CHART.stockChartConfig"></highchart>
+            </div>
+        </div>
+
+
+        <!-- Stock Performance Table -->
+        <!-- <div class="card-x padding">
+    <div class="subHeader">
+        Stock Performance
+    </div>
+    <div class="row-x tableH-x">
+        <div class="col-x col-x4  ">
+            HORIZON
+        </div>
+        <div class="col-x col-x4 pushRight">
+            STOCK RTN
+        </div>
+        <div class="col-x col-x4 pushRight">
+            NIFTY RTN
+        </div>
+    </div>
+
+    <div data-ng-repeat="item in equitySummary.stockReturn" class="repeated-item">
+        <div class="row-x fs-x-18" style=" border-bottom: 2px dotted #222;">
+            <div class="col-x col-x5 ">
+                <div class=" ">
+                    {{item.horizon}}
+                </div>
+            </div>
+            <div class="col-x col-x3 pushRight">
+                <div ng-class="(item.stockUp==true)?'fs-x-green':'fs-x-red'">
+                    {{(item.stockUp==true)?'+':'-'}}{{item.stock}}%
+                </div>
+            </div>
+            <div class="col-x col-x4 pushRight">
+                <div ng-class="(item.niftyUp==true)?'fs-x-green':'fs-x-red'">
+                    {{(item.niftyUp==true)?'+':'-'}}{{item.nifty}}%
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ -->
+
+    </ion-content>
+</ion-view>

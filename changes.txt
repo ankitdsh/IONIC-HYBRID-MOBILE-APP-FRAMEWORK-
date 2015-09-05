@@ -1,0 +1,5 @@
+CHANGES:-
+
+1.FastTouch: added fastclick library for removing touch delays
+2.AdvanceChartView: hid the white chartbackground till the chart loads
+3.AdvanceChartView: Fixed Tooltip.

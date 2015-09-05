@@ -1,0 +1,94 @@
+<ion-view view-title="Equity">
+    <ion-content ng-class="'marketContent-'+theme" has-bouncing="true">
+
+        <!-- Equity Banner -->
+        <div class="card-x noMargin equityHomeCard">
+            <div class="row-x">
+                <div class="col-x col-x6">
+                    <div class="fs-x-mid fs-x-white">
+                        EQUITY
+
+                    </div>
+                    <div class="fs-x-26 fs-x-white lh-x-35">
+                        {{equities.summary.amount}}
+                    </div>
+
+                    <div class="fs-x-12 fs-x-black bold-x lh-x-15">
+                        STATEMENT OF HOLDING
+                        <br> AS ON {{equities.summary.date}} | {{equities.summary.time}}
+                    </div>
+                </div>
+
+                <div class="col-x col-x6">
+                    <div class="fr-x ">
+                        <div class="fs-x-small lh-x-40 fs-x-white pushRight">CHANGE&nbsp;&nbsp;</div>
+                        <div>
+                            <div class="fl-x" style="padding: 0px 10px 0px 10px;">
+                                <img width="50" height="50" class="logo" ng-src="{{equities.summary.arrowUrl}}" />
+                            </div>
+                            <div class="fs-x-mid  fs-x-green fr-x pushRight">
+                                {{equities.summary.changeValue}}
+                                <br>({{equities.summary.changePercent}}%)&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Stock Performance Table -->
+        <div class="card-flat">
+            <div class="row-x tableH-x-1">
+                <div class="col-x col-x4">
+                    Company Name
+                    <br>ISIN
+                    <br>Last Txn.Dt
+                </div>
+                <div class="col-x col-x4 pushRight">
+                    Chng Value (Rs)
+                    <br>Latest Price
+                    <br>NO. Of Shares&nbsp;
+                </div>
+                <div class="col-x col-x4 pushRight">
+                    Latest Value (Rs)
+                    <br>Prev. Value (Rs)
+                    <br>Days Chng Rs(%)&nbsp;
+                </div>
+            </div>
+
+            <div data-ng-repeat="equity in equities.list" class="repeated-item">
+                <a ng-href="{{equity.url}}">
+                    <div class="row-x fs-x-{{theme}} fs-x-16" style=" border-bottom: 2px dotted #222;">
+
+                        <div class="col-x col-x4 ">
+                            {{equity.name}}
+                            <br>{{equity.isin}}
+                            <br>{{equity.lastTRXDate}} &nbsp;|<span class="fs-x-grey">&nbsp;{{equity.lastTRXTime}}</span>
+                        </div>
+
+                        <div class="col-x col-x4 pushRight">
+                            <span ng-class="(equity.profit==true)?'fs-x-green':'fs-x-red'">
+                            {{(equity.profit==true)?'+':'-'}}{{equity.changeValue}}
+                        </span>
+                            <br>{{equity.latestPrice}}
+                            <br>{{equity.shares}}&nbsp;
+
+                        </div>
+                        <div class="col-x col-x4 pushRight">
+                            {{equity.latestValue}}
+                            <br> {{equity.previousValue}}
+                            <br>
+                            <div ng-class="(equity.changeProfit==true)?'fs-x-green':'fs-x-red'">
+                                {{equity.daysChange}} ({{equity.changePercent}}%)&nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>

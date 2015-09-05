@@ -1,0 +1,51 @@
+<div class="list">
+    <!--     <label class="item item-radio">
+        <input type="radio" checked="checked" value="go" name="group">
+        <div class="item-content"> 30 DMA </div>
+        <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+    <label class="item item-radio">
+        <input type="radio" checked="checked" value="go" name="group">
+        <div class="item-content"> 200 DMA </div>
+        <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+    <label class="item item-radio">
+        <input type="radio" checked="checked" value="go" name="group">
+        <div class="item-content"> Bollinger Bands </div>
+        <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+    <label class="item item-radio">
+        <input type="radio" checked="checked" value="go" name="group">
+        <div class="item-content"> Envelopes </div>
+        <i class="radio-icon ion-checkmark"></i>
+    </label>
+
+    <label class="item item-radio">
+        <input type="radio" checked="checked" value="go" name="group">
+        <div class="item-content"> Parabolic SAR </div>
+        <i class="radio-icon ion-checkmark"></i>
+    </label> -->
+    <ion-toggle ng-model="ADVANCE_CHART.formulas.EMA.enabled" toggle-class="toggle-royal">EMA</ion-toggle>
+
+    <div class="list" ng-show="ADVANCE_CHART.formulas.EMA.enabled">
+        <label class="item item-input">
+            <input type="number" min="0" max="100" required="ENTER NUMBER" placeholder="Period1" ng-model="ADVANCE_CHART.formulas.EMA.params.periods.window[0]" ng-change="ADVANCE_CHART.formulas.EMA.hasPeriodChanged=true">
+        </label>
+    </div>
+
+
+    <ion-toggle ng-model="ADVANCE_CHART.formulas.SMA.enabled" toggle-class="toggle-assertive">SMA</ion-toggle>
+    <div class="list" ng-show="ADVANCE_CHART.formulas.SMA.enabled">
+        <label class="item item-input">
+            <input type="number" min="0" max="100" required="ENTER NUMBER" placeholder="Period1" ng-model="ADVANCE_CHART.formulas.SMA.params.periods.window[0]" ng-change="ADVANCE_CHART.formulas.SMA.hasPeriodChanged=true">
+        </label>
+    </div>
+    <ion-toggle ng-model="ADVANCE_CHART.formulas.Bollinger.enabled" toggle-class="toggle-energized">Bollinger Bands </ion-toggle>
+    <ion-toggle ng-model="ADVANCE_CHART.formulas.Envelopes.enabled" toggle-class="toggle-balanced">Envelopes</ion-toggle>
+    <ion-toggle ng-model="ADVANCE_CHART.formulas.PSAR.enabled" toggle-class="toggle-calm">Parabolic SAR</ion-toggle>
+
+
+</div>

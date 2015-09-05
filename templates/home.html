@@ -1,0 +1,198 @@
+<ion-view view-title="{{home.title}}" style="color:#eeeeee">
+    <ion-content class="padding" ng-class="'marketContent-'+theme" has-bouncing="true">
+
+
+        <!-- Home Summary Content  -->
+        <!--      <div class="card noPadding" ng-class="contentClass">
+            <div class="row noPadding responsive-sm-xx ">
+
+                <div class="col col-67">
+                    <div class="row noPadding fs22">
+                        {{summary.leftHeader}}</br>{{summary.amount}}
+                    </div>
+                    <div class="row noPadding">
+                        <div class="col col-67" data-ng-bind-html="summary.asOnText"></div>
+                    </div>
+                </div>
+
+
+                <div class="col pushRight">
+                    <div class="row noPadding">
+                        {{summary.prevText}}</br>{{summary.prevValue}}
+                    </div>
+                    <div class="row noPadding">
+                        <div class="col pushRight" data-ng-bind-html="summary.prevAsOnText"></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="card-x">
+            <div class="row-x ">
+                <div class="col-x col-x7  ">
+                    <div class="fs-x-14 fs-x-grey">
+                        {{summary.leftHeader}}
+                    </div>
+                    <div class="fs-x-26 bold-x lh-x-30 fs-x-{{theme}}">
+                        {{summary.amount}}
+                    </div>
+
+                    <div class="fs-x-14 fs-x-greyer">
+                        AS ON {{summary.date}} {{summary.time}}
+                    </div>
+                    <div class="fs-x-14" ng-class="summary.gainClass">
+                        <img ng-src="{{summary.arrowUrl}}" width="12" height="12" /> {{summary.gain}} ({{summary.gainPer}}%)
+                    </div>
+                </div>
+
+                <div class="col-x col-x5">
+                    <div class="fr-x pushRight">
+                        <div class="fs-x-14 fs-x-grey">{{summary.prevText}}</div>
+                        <div class="fs-x-24 lh-x-25 bold-x fs-x-grey">{{summary.prevValue}}</div>
+                        <div class="fs-x-14 fs-x-greyer">
+                            AS ON
+                            <br>{{summary.prevDate}} {{summary.prevTime}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- All Asset Cards using Repeater & Custom Directive -->
+        <!-- include all custom cards and partials here -->
+        <!--   <home-asset-card asset-item='item'> <span>Transclude</span></home-asset-card>-->
+        <div data-ng-repeat="ass in assets" class="repeated-item">
+            <!--        <a ng-href="{{ass.url}}">
+                        <div data-ng-transclude></div>
+                        <div class="card">
+                            <div class="item item-text-wrap noPadding">
+                                <div class="row noPadding responsive-sm-xx">
+                                    <div class="col col-67 {{ass.backCardColor}}">
+                                        <div class="row homeCard homeCardHeader">
+                                            {{ass.name.toUpperCase()}}
+                                        </div>
+                                        <div class="row homeCard">
+                                            {{ass.value}}
+                                        </div>
+                                    </div>
+
+                                    <div class="col {{ass.cardClass}}">
+                                        <div class="row homeCard homeCardHeader ass-note pushRight" align="right">
+                                            {{ass.change}}
+                                        </div>
+                                        <div class="row">
+                                            <img width="50" height="50" class="logo" ng-src="{{ass.arrowUrl}}">
+                                            <div class="col homeCard pushRight" data-ng-bind-html="ass.changeValue"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+   </a> -->
+
+            <div class="card-x">
+                <a ng-href="{{ass.url}}">
+                    <div class="row-x ">
+                        <div class="col-x col-x7 {{ass.backCardColor}} ">
+                            <div class="card-x-text card-x-header">
+                                {{ass.name}}
+                            </div>
+                            <div class="card-x-text card-x-amount">
+                                {{ass.value}}
+                            </div>
+                        </div>
+
+                        <div class="col-x col-x5 {{ass.cardClass}}">
+                            <div class="fl-x" style="position:relative;top: 15px;">
+                                <img width="50" height="50" class="logo" ng-src="{{ass.arrowUrl}}" />
+                            </div>
+                            <div class="fr-x pushRight">
+                                <div class="card-x-text card-x-small">{{ass.change}}</div>
+                                <div class="card-x-text card-x-mid">{{ass.changeValue}} </div>
+                                <div class="card-x-text card-x-mid">{{ass.changePercent}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <!-- Portfolio Value HighChart -->
+        <dic class="card">
+            <div class="subHeader fs-x-{{theme}}">PORTFOLIO VALUE (1YR)</div>
+            <div class="row">
+                <highchart id="portfolioChart" config="chartConfig" class="span12">{{chartConfig.series}}</highchart>
+            </div>
+        </dic>
+
+
+        <!-- Return/Change Value Card -->
+        <!--  <div class="card" ng-class="contentClass">
+            <div class="row subHeader">
+                RETURN / CHANGE VALUE
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="row">LAST 1M CHANGE</div>
+                    <div class="row">+6.20%</div>
+                </div>
+                <div class="col">
+                    <div class="row">LAST 1M CHANGE</div>
+                    <div class="row">+6.20%</div>
+                </div>
+                <div class="col">
+                    <div class="row">LAST 1M CHANGE</div>
+                    <div class="row">+6.20%</div>
+                </div>
+
+            </div>
+        </div> -->
+
+
+
+        <div>
+            <div class="subHeader">
+                RETURN / CHANGE VALUE
+            </div>
+
+            <div class="row-x">
+                <div class="col-x col-x4 ">
+                    <div class="fs-x-14 fs-x-greyer ">
+                        LAST 1M CHANGE
+                    </div>
+                    <div class="fs-x-mid fs-x-green ">
+                        +6.20%
+                    </div>
+                </div>
+                <div class="col-x col-x4 ">
+                    <div class="fs-x-14 fs-x-greyer ">
+                        LAST 3M CHANGE
+                    </div>
+                    <div class="fs-x-mid fs-x-red ">
+                        -1.20%
+                    </div>
+                </div>
+                <div class="col-x col-x4">
+                    <div class="fs-x-14 fs-x-greyer ">
+                        LAST 6M CHANGE
+                    </div>
+                    <div class="fs-x-mid fs-x-green ">
+                        <span>+4.45%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </ion-content>
+</ion-view>
